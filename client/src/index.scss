@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+
+$color-black: #101010;
+$color-white: #ffffff;
+
+$color-primary: #00a969;
+$color-secondary: #7d8790;
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    font-smooth: auto;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.container {
+    width: 80%;
+    max-width: 1300px;
+
+    margin: 0px auto;
+}
