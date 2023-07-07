@@ -28,8 +28,9 @@ export const ExperimentWrapper = ({ btn1, btn2, children }) => {
         btnRef2.current.addEventListener("click", btn2ClickHandler);
 
         return () => {
-            btnRef1.current.removeEventListener("click", btn1ClickHandler);
-            btnRef2.current.removeEventListener("click", btn2ClickHandler);
+            // 버그수정필요 : CleanUp 에서 RemoveEventListener 호출 안됌
+            // btnRef1.current.removeEventListener("click", btn1ClickHandler);
+            // btnRef2.current.removeEventListener("click", btn2ClickHandler);
         };
     }, []);
 
