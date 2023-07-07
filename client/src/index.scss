@@ -25,3 +25,18 @@ $color-secondary: #7d8790;
 
     margin: 0px auto;
 }
+
+// Animations
+
+.animate-rise-after {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.animate-rise-before {
+    transform: translateY(50px);
+    opacity: 0;
+}
+
+.animate-opacity-before {
+}
