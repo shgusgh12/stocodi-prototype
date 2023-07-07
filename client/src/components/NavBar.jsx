@@ -1,10 +1,23 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 import logo from "../assets/logo.svg";
 import "../styles/NavBar.scss";
 
 export default function NavBar() {
+    const location = useLocation();
+
+    useEffect(() => {
+        for (const endpoint of document.querySelectorAll(".nav-item > a")) {
+            if (endpoint.getAttribute("href") == location.pathname) {
+                console.log(endpoint.getAttribute("href"));
+                endpoint.classList.add("nav-item-highlight");
+            } else {
+                endpoint.classList.remove("nav-item-highlight");
+            }
+        }
+    }, [location.pathname]);
+
     return (
         <nav className="nav-wrapper wrapper">
             <ul className="nav-container container">
