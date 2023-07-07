@@ -1,0 +1,41 @@
+@import "../index";
+
+.experiment-wrapper {
+    margin: 50px 0px;
+}
+
+.experiment-container {
+    padding: 50px;
+    border-radius: 30px;
+    box-shadow: 0px 5px 10px $color-secondary;
+}
+
+.experiment-switch {
+    width: 200px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: $color-light-gray;
+
+    position: relative;
+
+    button {
+        width: 50%;
+        height: 100%;
+        border-radius: 40px;
+        background: none;
+        font-weight: bold;
+        color: $color-secondary;
+    }
+
+    button:nth-child(1) {
+        z-index: 10;
+    }
+    button:nth-child(2) {
+        z-index: 10;
+    }
+}
+
+.switch-selected {
+    background-color: $color-primary !important;
+    color: $color-white !important;
+}
