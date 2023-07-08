@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-
-import "../styles/ExperimentComponents.scss";
+import Dropdown from "react-bootstrap/Dropdown";
 
 export const ExperimentWrapper = ({ btn1, btn2, children }) => {
     let componentDidMount = false;
@@ -49,13 +48,25 @@ export const ExperimentWrapper = ({ btn1, btn2, children }) => {
     );
 };
 
+// Trader
+
 export const TraderContainer = () => {
-    return <h1>Trader</h1>;
+    return <TraderChartContainer></TraderChartContainer>;
 };
 
-export const TraderChartContainer = () => {};
+export const TraderChartContainer = () => {
+    return (
+        <div className="trader-chart-container">
+            <div className="trader-item item-trader">Chart</div>
+
+            <div className="trader-item item-order"></div>
+        </div>
+    );
+};
 
 export const TraderOrderContainer = () => {};
+
+// PortFolio
 
 export const PortfolioContainer = () => {
     return <h1>Portfolio</h1>;
