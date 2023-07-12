@@ -1,5 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
-import Dropdown from "react-bootstrap/Dropdown";
+import { DropDown } from "../utils/DropDown";
+
+import "../styles/ExperimentComponents.scss";
 
 export const ExperimentWrapper = ({ btn1, btn2, children }) => {
     let componentDidMount = false;
@@ -57,7 +59,22 @@ export const TraderContainer = () => {
 export const TraderChartContainer = () => {
     return (
         <div className="trader-chart-container">
-            <div className="trader-item item-trader">Chart</div>
+            <div className="trader-item item-trader">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>LOGO:</td>
+                            <td>애플</td>
+                            <td>$158.88</td>
+                            <td>+0.67%</td>
+                            <td>1.06</td>
+                            <td>거래량 68,483,589</td>
+                            <td>거래대금 $109억 2,896만</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div className="chart-container-bottom"></div>
+            </div>
 
             <div className="trader-item item-order"></div>
         </div>

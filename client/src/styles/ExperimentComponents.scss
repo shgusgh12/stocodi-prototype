@@ -44,16 +44,18 @@
 .trader-chart-container {
     display: flex;
     justify-content: space-evenly;
+    padding: 20px;
 
     .trader-item {
         height: 500px;
+        padding: 10px;
     }
 }
 
 .item-trader {
-    width: 60%;
+    width: 65%;
 }
 
 .item-order {
-    width: 30%;
+    width: 35%;
 }
