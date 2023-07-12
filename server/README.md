@@ -1,5 +1,5 @@
 ## Version
-Java11
-SpringBoot 2.7.13
-Graddle - Groovy
-DB - MySQL
+<p> Java11  </p>
+<p> SpringBoot 2.7.13 </p>
+<p> Graddle - Groovy </p>
+<p> DB - MySQL </p>
