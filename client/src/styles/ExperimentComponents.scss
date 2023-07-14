@@ -1,0 +1,99 @@
+@import "../index";
+
+$btn-container-width: 300px;
+$btn-item-width: 100px;
+
+.experiment-wrapper {
+    margin: 80px 0px;
+}
+
+.experiment-container {
+    padding: 50px 30px;
+    border-radius: 30px;
+    box-shadow: 0px 5px 30px $color-secondary;
+}
+
+.experiment-switch {
+    width: $btn-container-width;
+    height: 40px;
+    border-radius: 40px;
+    background-color: $color-light-gray;
+
+    position: relative;
+
+    button {
+        width: $btn-item-width;
+        height: 100%;
+        border-radius: 40px;
+        background: none;
+        font-weight: bold;
+        color: $color-secondary;
+    }
+
+    button:nth-child(1) {
+        z-index: 10;
+    }
+    button:nth-child(2) {
+        z-index: 10;
+    }
+    button:nth-child(3) {
+        z-index: 10;
+    }
+}
+
+.switch-selected {
+    background-color: $color-primary !important;
+    color: $color-white !important;
+}
+
+// Interest Container
+
+.interest-container {
+    border-radius: 20px;
+
+    display: flex;
+}
+
+.interest-item {
+    width: 50%;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 20px $color-secondary;
+
+    h2 {
+        padding: 30px;
+        font-size: 1.4rem;
+    }
+
+    table {
+        width: 100%;
+        height: 350px;
+        padding: 0px 30px 30px 30px;
+        text-align: center;
+    }
+
+    thead {
+        margin: 0px 0px 10px 0px;
+        color: $color-secondary;
+    }
+}
+
+// Trader Contianer
+.trader-chart-container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+
+    .trader-item {
+        height: 500px;
+        padding: 10px;
+    }
+}
+
+.item-trader {
+    width: 65%;
+}
+
+.item-order {
+    width: 35%;
+}

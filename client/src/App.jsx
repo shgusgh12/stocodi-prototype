@@ -9,10 +9,13 @@ import ExperimentPage from "./pages/ExperimentPage";
 import CommunityPage from "./pages/CommunityPage";
 import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
+import { Provider } from "react-redux";
+
+import { store } from "./context/store";
 
 export default function App() {
     return (
-        <>
+        <Provider store={store}>
             <NavBar></NavBar>
 
             <Routes>
@@ -23,6 +26,6 @@ export default function App() {
                 <Route path="/login" element={<LoginPage />}></Route>
                 <Route path="/register" element={<RegisterPage />}></Route>
             </Routes>
-        </>
+        </Provider>
     );
 }

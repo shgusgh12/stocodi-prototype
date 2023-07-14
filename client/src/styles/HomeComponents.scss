@@ -109,9 +109,16 @@ $section-hero-height: 700px;
 
 .section-content-items {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+}
+
+// Content Item
+
+.section-content-item-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .section-content-item {

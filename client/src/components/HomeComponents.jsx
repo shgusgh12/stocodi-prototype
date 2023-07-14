@@ -79,6 +79,10 @@ export const ContentItem = ({ title, instructor, thumbnail, time }) => {
     );
 };
 
+export const ContentItemGroup = ({ children }) => {
+    return <div className="section-content-item-group">{children}</div>;
+};
+
 export const ContentSection = ({ title, children }) => {
     return (
         <section className="section-content-wrapper wrapper">
