@@ -1,13 +1,13 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const API_URL = "http://localhost:8080/api/stock/pastprice";
+const API_URL = "http://localhost:8080/api/user/interest";
 
-export const stockSlice = createSlice({
-    name: "stock-slice",
+export const interestSlice = createSlice({
+    name: "interest-slice",
 
     initialState: {
         status: null,
-        data: [],
+        data: null,
     },
 
     reducers: {
@@ -18,10 +18,10 @@ export const stockSlice = createSlice({
     },
 });
 
-export const pastDataFetchThunk = () => {
+export const interestDataFetchThunk = () => {
     return async (dispatch) => {
         dispatch(
-            stockActions.setState({
+            interestActions.setState({
                 status: "fetching",
                 data: null,
             })
@@ -29,21 +29,21 @@ export const pastDataFetchThunk = () => {
 
         const request = async () => {
             const response = await fetch(API_URL);
-            if (!response.ok) throw new Error("Stock Data Fetching Failed");
-            return await response.json();
+            if (!response.ok) throw new Error("Interest Data Fetch Failed");
+            return response.json();
         };
 
         try {
             const data = await request();
             dispatch(
-                stockActions.setState({
+                interestActions.setState({
                     status: "success",
                     data: data,
                 })
             );
         } catch (error) {
             dispatch(
-                stockActions.setState({
+                interestActions.setState({
                     status: "failed",
                     data: null,
                 })
@@ -52,6 +52,4 @@ export const pastDataFetchThunk = () => {
     };
 };
 
-export const realTimeDataFetchThunk = () => {};
-
-export const stockActions = stockSlice.actions;
+export const interestActions = interestSlice.actions;
