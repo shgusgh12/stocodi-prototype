@@ -1,0 +1,142 @@
+@import "../index";
+
+.background-section{ 
+    background: linear-gradient(#0ECB81, white);
+    height: 100vh;
+};
+.left-container{
+    width: 45vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.logo{
+    padding: 20px 20px 10px;
+    width: 30px;
+}
+
+.image-container{
+    display: flex;
+    img{
+        width: 40vw;
+    }
+}
+
+.right-container{
+    width: 60vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 45px 0 0 45px;
+    box-shadow:-2px -2px 10px 0.1px rgb(181, 181, 181);
+}
+.flex-row{
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.flex-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-box{
+    text-align: center;
+    h2{
+        font-size: 35px;
+        margin-bottom: 2rem;
+    }
+    p{
+        margin-top: 10px;
+        font-size: 15px;
+    }
+    margin-bottom: 3rem;
+}
+
+.social-container{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    height: 3.5rem;
+    .social-login{
+        margin: 0.5rem;   
+        display: flex;
+        width: 10vw;
+        color: gray;
+        flex-direction: row;
+        justify-self: center;
+        align-items: center;
+        padding: 0 1rem;
+        border: 1px solid lightgray;
+        border-radius: 8px;
+        cursor: pointer;
+        p{
+            font-size: 11px;
+            text-align: center;
+        }
+        img{
+            padding-right: 1.3rem;
+        }
+    }
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+    width:38vw;
+    p{
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+    input{
+        margin-bottom: 0.5rem;
+        height: 2.5rem;
+        border-radius: 10px;
+        background-color: #F8F8F8;
+        padding-left: 0.7rem;
+        align-items: center;
+        font-size: 1.2rem;
+        margin-bottom: 1.2rem;
+        &:focus{
+            border-color: #0ECB81;
+        }
+    }
+    button{
+        background-color: #0ECB81;
+        border-radius: 10px;
+        color: white;
+        height: 3rem;
+        cursor: pointer;
+        margin-bottom: 1.5rem;
+        font-size: 1rem;
+        &:hover{
+            background-color: rgb(105, 255, 167);
+        }
+    }
+
+}
+
+.line{
+    margin-top: 2rem;
+}
+
+.account-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    p{
+        margin-right: 0.5rem;
+    }
+    Link{
+        text-decoration: none;
+        color: #0ECB81;
+        cursor: pointer;
+    }
+}
